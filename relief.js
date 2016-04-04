@@ -1,29 +1,28 @@
 window.onload = function(){
 
+  var defaultColor = "lightgrey";
+  var elements;
 
-var elements = document.getElementsByClassName("fbChatSidebar"), i, len;
-var defaultColor = "lightgrey";
+  elements = document.getElementsByClassName("fbChatSidebar"), i, len;
 
+  document.body.style.background = defaultColor;
+  document.getElementById("contentCol").style.backgroundColor = defaultColor;
 
-
-document.body.style.background = defaultColor;
-document.getElementById("contentCol").style.backgroundColor = defaultColor;
-
-for(i = 0, len = elements.length; i < len; i++){
+  for(i = 0, len = elements.length; i < len; i++){
   elements[i].style.backgroundColor = defaultColor;
-};
+  };
 
-var elements = document.getElementsByClassName("_4-u2"), i, len;
+  elements = document.getElementsByClassName("_4-u2"), i, len;
 
-for(i = 0, len = elements.length; i < len; i++){
+  for(i = 0, len = elements.length; i < len; i++){
   elements[i].style.backgroundColor = defaultColor;
-};
+  };
 
-var elements = document.getElementsByClassName("_4-u8"), i, len;
+  elements = document.getElementsByClassName("_4-u8"), i, len;
 
-for(i = 0, len = elements.length; i < len; i++){
+  for(i = 0, len = elements.length; i < len; i++){
   elements[i].style.backgroundColor = defaultColor;
-};
+  };
 
 
 };
