@@ -1,14 +1,30 @@
 window.onload = function(){
 
-  var defaultColor = "lightgrey";
+  window.defaultColor = "lightgrey";
+  window.defaultBackgroundColor = "#676565";
+  window.defaultInnerBackgroundColor = "#424040";
+
   var elements, i, len;
 
+
+  defaultLoad();
+
+  window.onscroll = function(){updateFeed()};
+
+};
+
+function defaultLoad(){
   elements = document.getElementsByClassName("fbChatSidebar");
 
-  document.body.style.background = defaultColor;
+  document.body.style.background = defaultBackgroundColor;
 
-  document.getElementById("contentCol").style.backgroundColor = defaultColor;
+  document.getElementById("contentCol").style.backgroundColor = defaultInnerBackgroundColor;
 
+  updateFeed();
+};
+
+
+function updateFeed(){
   for(i = 0, len = elements.length; i < len; i++){
   elements[i].style.backgroundColor = defaultColor;
   };
