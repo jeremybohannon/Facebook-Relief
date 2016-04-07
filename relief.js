@@ -24,6 +24,4 @@ window.onload = function(){
   for(i = 0, len = elements.length; i < len; i++){
   elements[i].style.backgroundColor = defaultColor;
   };
-
-
 };
