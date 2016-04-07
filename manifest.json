@@ -3,7 +3,7 @@
 
   "name": "Facebook Relief",
   "version": "1.0",
-  "description": "Changes Facebook background to lightgrey",
+  "description": "Changes Facebook's UI to a more eye-friendly experince",
   "content_scripts": [
     {
       "matches": ["*://*.facebook.com/*"],
