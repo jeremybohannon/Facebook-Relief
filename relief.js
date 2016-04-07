@@ -4,7 +4,7 @@ window.onload = function(){
   window.defaultBackgroundColor = "#676565";
   window.defaultInnerBackgroundColor = "#424040";
 
-  window.currentUrl = window.location.href;
+  var currentUrl = window.location.href;
 
   defaultLoad();
 
@@ -12,22 +12,25 @@ window.onload = function(){
 
   setInterval(function(){
     if(currentUrl != window.location.href){
+      currentUrl = window.location.href;
       defaultLoad();
     }
-
-
   }, 3000);
 
 };
 
 function defaultLoad(){
+  updateFeed();
 
   document.body.style.background = defaultBackgroundColor;
 
   document.getElementById("contentCol").style.backgroundColor = defaultInnerBackgroundColor;
 
-  document.getElementById("pagelet_timeline_recent").style.backgroundColor = defaultBackgroundColor;
-  updateFeed();
+  // console.log(window.location.href.indexOf() > -1);
+  //
+  // if(document.location.lastIndexOf("/") != "" ){
+  //   document.getElementById("pagelet_timeline_recent").style.backgroundColor = defaultBackgroundColor;
+  // }
 };
 
 
