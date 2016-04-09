@@ -26,11 +26,9 @@ function defaultLoad(){
 
   document.getElementById("contentCol").style.backgroundColor = defaultInnerBackgroundColor;
 
-  // console.log(window.location.href.indexOf() > -1);
-  //
-  // if(document.location.lastIndexOf("/") != "" ){
-  //   document.getElementById("pagelet_timeline_recent").style.backgroundColor = defaultBackgroundColor;
-  // }
+  if(location.pathname.length > 1){
+    document.getElementById("pagelet_timeline_recent").style.backgroundColor = defaultInnerBackgroundColor;
+  }
 };
 
 
